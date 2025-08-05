@@ -1,6 +1,5 @@
-import React from 'react';
-import { Camera, Mail, Phone, MapPin, Instagram, Youtube, Twitter } from 'lucide-react';
-
+import { Mail, MapPin, Instagram, Youtube } from 'lucide-react';
+import FlyWithIamIcon from './FlyWithIamIconGradient';
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
@@ -10,27 +9,24 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-gray-900 border-t border-gray-800">
+    <footer className="bg-black border-t border-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid md:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="md:col-span-1">
             <div className="flex items-center space-x-2 mb-4">
-              <Camera className="h-8 w-8 text-[#a47764]" />
+              <FlyWithIamIcon className="h-8 w-8 text-sky-400" size={32} />
               <span className="text-xl font-bold text-white">Fly with evilla</span>
             </div>
             <p className="text-gray-400 mb-6">
               Professional drone videography and aerial cinematography services for all your creative needs.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-[#a47764] transition-colors">
+              <a title='Instagram' href="https://www.instagram.com/fly_iammrvilla/reels/" className="text-gray-400 hover:text-[#a47764] transition-colors">
                 <Instagram className="h-5 w-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-[#a47764] transition-colors">
+              <a title='Youtube' href="https://www.youtube.com/@flyiammrvilla" className="text-gray-400 hover:text-[#a47764] transition-colors">
                 <Youtube className="h-5 w-5" />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-[#a47764] transition-colors">
-                <Twitter className="h-5 w-5" />
               </a>
             </div>
           </div>
@@ -53,14 +49,6 @@ const Footer = () => {
                   className="text-gray-400 hover:text-[#a47764] transition-colors text-left"
                 >
                   Portfolio
-                </button>
-              </li>
-              <li>
-                <button
-                  onClick={() => scrollToSection('reel')}
-                  className="text-gray-400 hover:text-[#a47764] transition-colors text-left"
-                >
-                  Reel
                 </button>
               </li>
               <li>
@@ -109,11 +97,7 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-2 text-gray-400">
                 <Mail className="h-4 w-4" />
-                <span className="text-sm">hello@flywithevilla.com</span>
-              </div>
-              <div className="flex items-center space-x-2 text-gray-400">
-                <Phone className="h-4 w-4" />
-                <span className="text-sm">+1 (555) 123-4567</span>
+                <span className="text-sm">fly@iammrvilla.com</span>
               </div>
               <div className="flex items-center space-x-2 text-gray-400">
                 <MapPin className="h-4 w-4" />
@@ -126,7 +110,7 @@ const Footer = () => {
         <div className="border-t border-gray-800 mt-8 pt-8">
           <div className="flex flex-col md:flex-row items-center justify-between">
             <p className="text-gray-400 text-sm">
-              © {currentYear} Fly with evilla. All rights reserved.
+              © {currentYear} Fly with iammrvilla. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a href="#" className="text-gray-400 hover:text-[#a47764] transition-colors text-sm">

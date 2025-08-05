@@ -1,10 +1,9 @@
-import React from 'react';
 import { Award, Shield, CheckCircle, Calendar } from 'lucide-react';
 
 const About = () => {
   const certifications = [
     {
-      title: "FAA Part 107 Remote Pilot Certificate",
+      title: "European A2 Remote Pilot Certificate",
       issuer: "Federal Aviation Administration",
       date: "2023",
       verified: true
@@ -37,7 +36,7 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-20 bg-gray-900">
+    <section id="about" className="py-20 bg-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
@@ -64,7 +63,7 @@ const About = () => {
         {/* Certifications Grid */}
         <div className="grid md:grid-cols-2 gap-6 mb-12">
           {certifications.map((cert, index) => (
-            <div key={index} className="bg-gray-800 rounded-xl p-6 border border-gray-700">
+            <div key={index} className="bg-black rounded-xl p-6 border border-gray-700">
               <div className="flex items-start justify-between mb-4">
                 <div className="flex items-center space-x-3">
                   <div className="bg-[#a47764]/20 p-2 rounded-lg">
@@ -88,45 +87,6 @@ const About = () => {
               </div>
             </div>
           ))}
-        </div>
-
-        {/* Safety & Insurance */}
-        <div className="bg-gradient-to-r from-gray-800 to-gray-700 rounded-2xl p-8 border border-gray-600">
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div>
-              <div className="flex items-center space-x-3 mb-4">
-                <Shield className="h-8 w-8 text-green-400" />
-                <h3 className="text-2xl font-bold text-white">Fully Insured & Compliant</h3>
-              </div>
-              <p className="text-gray-300 mb-6">
-                All flights are conducted with proper insurance coverage, airspace authorization, 
-                and in full compliance with FAA regulations for commercial drone operations.
-              </p>
-              <ul className="space-y-2">
-                <li className="flex items-center space-x-2 text-gray-300">
-                  <CheckCircle className="h-5 w-5 text-green-400" />
-                  <span>$1M Liability Insurance Coverage</span>
-                </li>
-                <li className="flex items-center space-x-2 text-gray-300">
-                  <CheckCircle className="h-5 w-5 text-green-400" />
-                  <span>Pre-flight Safety Inspections</span>
-                </li>
-                <li className="flex items-center space-x-2 text-gray-300">
-                  <CheckCircle className="h-5 w-5 text-green-400" />
-                  <span>Airspace Authorization Management</span>
-                </li>
-              </ul>
-            </div>
-            <div className="text-center">
-              <div className="bg-gray-900 rounded-xl p-6">
-                <div className="text-4xl font-bold text-[#a47764] mb-2">100%</div>
-                <div className="text-gray-300 mb-4">Safety Record</div>
-                <div className="text-sm text-gray-400">
-                  Zero incidents across 500+ commercial flights
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>

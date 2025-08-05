@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
-import { Menu, X, Camera } from 'lucide-react';
+import { useState } from 'react';
+import { Menu, X } from 'lucide-react';
+import FlyWithIamIcon from './FlyWithIamIconGradient';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,11 +12,11 @@ const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 bg-gray-900/95 backdrop-blur-sm z-50 border-b border-gray-800">
+    <header className="fixed top-0 left-0 right-0 bg-black z-50 border-b border-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center space-x-2">
-            <Camera className="h-8 w-8 text-sky-400" />
+            <FlyWithIamIcon className="h-8 w-8 text-sky-400" size={32} />
             <span className="text-xl font-bold text-white">Fly with evilla</span>
           </div>
 
@@ -32,12 +33,6 @@ const Header = () => {
               className="text-gray-300 hover:text-[#a47764] transition-colors font-medium"
             >
               Portfolio
-            </button>
-            <button
-              onClick={() => scrollToSection('reel')}
-              className="text-gray-300 hover:text-[#a47764] transition-colors font-medium"
-            >
-              Reel
             </button>
             <button
               onClick={() => scrollToSection('photography')}

@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Clock, Send, CheckCircle } from 'lucide-react';
+import { useState } from 'react';
+import { Mail, MapPin, Clock, Send, CheckCircle } from 'lucide-react';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -28,7 +28,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-gray-900">
+    <section id="contact" className="py-20 bg-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
@@ -52,16 +52,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="text-white font-semibold">Email</p>
-                    <p className="text-gray-400">hello@flywithevilla.com</p>
-                  </div>
-                </div>
-                <div className="flex items-center space-x-4">
-                  <div className="bg-[#a47764]/20 p-3 rounded-lg">
-                    <Phone className="h-6 w-6 text-[#a47764]" />
-                  </div>
-                  <div>
-                    <p className="text-white font-semibold">Phone</p>
-                    <p className="text-gray-400">+1 (555) 123-4567</p>
+                    <p className="text-gray-400">fly@iammrvilla.com</p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-4">
@@ -86,19 +77,19 @@ const Contact = () => {
             </div>
 
             {/* Quick Services */}
-            <div className="bg-gray-800 rounded-xl p-6 border border-gray-700">
+            <div className="bg-black rounded-xl p-6 border border-gray-700">
               <h4 className="text-xl font-bold text-white mb-4">Quick Services</h4>
               <div className="grid grid-cols-2 gap-4">
-                <button className="bg-gray-700 hover:bg-gray-600 text-white p-3 rounded-lg transition-colors text-sm">
+                <button className="bg-black hover:bg-[#a47764] border border-gray-600 text-white p-3 rounded-lg transition-colors text-sm">
                   Real Estate Package
                 </button>
-                <button className="bg-gray-700 hover:bg-gray-600 text-white p-3 rounded-lg transition-colors text-sm">
+                <button className="bg-black hover:bg-[#a47764] border border-gray-600 text-white p-3 rounded-lg transition-colors text-sm">
                   Wedding Coverage
                 </button>
-                <button className="bg-gray-700 hover:bg-gray-600 text-white p-3 rounded-lg transition-colors text-sm">
+                <button className="bg-black hover:bg-[#a47764] border border-gray-600 text-white p-3 rounded-lg transition-colors text-sm">
                   Commercial Shoot
                 </button>
-                <button className="bg-gray-700 hover:bg-gray-600 text-white p-3 rounded-lg transition-colors text-sm">
+                <button className="bg-black hover:bg-[#a47764] border border-gray-600 text-white p-3 rounded-lg transition-colors text-sm">
                   Emergency Service
                 </button>
               </div>
@@ -106,7 +97,7 @@ const Contact = () => {
           </div>
 
           {/* Contact Form */}
-          <div className="bg-gray-800 rounded-2xl p-8 border border-gray-700">
+          <div className="bg-black rounded-2xl p-8 border border-gray-700">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
@@ -120,7 +111,7 @@ const Contact = () => {
                     required
                     value={formData.name}
                     onChange={handleChange}
-                    className="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-[#a47764] focus:ring-1 focus:ring-[#a47764]"
+                    className="w-full bg-black border border-gray-600 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-[#a47764] focus:ring-1 focus:ring-[#a47764]"
                     placeholder="Your full name"
                   />
                 </div>
@@ -135,7 +126,7 @@ const Contact = () => {
                     required
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-[#a47764] focus:ring-1 focus:ring-[#a47764]"
+                    className="w-full bg-black border border-gray-600 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-[#a47764] focus:ring-1 focus:ring-[#a47764]"
                     placeholder="your@email.com"
                   />
                 </div>
@@ -152,8 +143,8 @@ const Contact = () => {
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    className="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-[#a47764] focus:ring-1 focus:ring-[#a47764]"
-                    placeholder="+1 (555) 123-4567"
+                    className="w-full bg-black border border-gray-600 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-[#a47764] focus:ring-1 focus:ring-[#a47764]"
+                    placeholder="+49 (170) 000-0000"
                   />
                 </div>
                 <div>
@@ -166,7 +157,7 @@ const Contact = () => {
                     required
                     value={formData.projectType}
                     onChange={handleChange}
-                    className="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-[#a47764] focus:ring-1 focus:ring-[#a47764]"
+                    className="w-full bg-black border border-gray-600 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-[#a47764] focus:ring-1 focus:ring-[#a47764]"
                   >
                     <option value="">Select project type</option>
                     <option value="real-estate">Real Estate</option>
@@ -189,7 +180,7 @@ const Contact = () => {
                     name="timeline"
                     value={formData.timeline}
                     onChange={handleChange}
-                    className="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-[#a47764] focus:ring-1 focus:ring-[#a47764]"
+                    className="w-full bg-black border border-gray-600 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-[#a47764] focus:ring-1 focus:ring-[#a47764]"
                   >
                     <option value="">Select timeline</option>
                     <option value="asap">ASAP (Rush)</option>
@@ -208,7 +199,7 @@ const Contact = () => {
                     name="budget"
                     value={formData.budget}
                     onChange={handleChange}
-                    className="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-[#a47764] focus:ring-1 focus:ring-[#a47764]"
+                    className="w-full bg-black border border-gray-600 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-[#a47764] focus:ring-1 focus:ring-[#a47764]"
                   >
                     <option value="">Select budget range</option>
                     <option value="under-500">Under $500</option>
@@ -231,7 +222,7 @@ const Contact = () => {
                   rows={4}
                   value={formData.message}
                   onChange={handleChange}
-                  className="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-[#a47764] focus:ring-1 focus:ring-[#a47764] resize-none"
+                  className="w-full bg-black border border-gray-600 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-[#a47764] focus:ring-1 focus:ring-[#a47764] resize-none"
                   placeholder="Tell us about your project, location, specific requirements, and any other details that would help us provide an accurate quote..."
                 ></textarea>
               </div>
@@ -253,24 +244,6 @@ const Contact = () => {
                 )}
               </button>
             </form>
-          </div>
-        </div>
-
-        {/* Bottom CTA */}
-        <div className="text-center mt-16">
-          <div className="bg-gradient-to-r from-sky-500/20 to-orange-500/20 rounded-2xl p-8 border border-sky-500/20">
-            <h3 className="text-2xl font-bold text-white mb-4">Ready for Takeoff?</h3>
-            <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
-              Join hundreds of satisfied clients who have elevated their projects with our professional drone videography services.
-            </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <button className="bg-[#a47764] hover:bg-[#8d6854] text-white px-8 py-3 rounded-lg transition-colors font-semibold">
-                Schedule Consultation
-              </button>
-              <button className="border-2 border-[#c49882] text-[#c49882] hover:bg-[#c49882] hover:text-white px-8 py-3 rounded-lg transition-colors font-semibold">
-                View Portfolio
-              </button>
-            </div>
           </div>
         </div>
       </div>

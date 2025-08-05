@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Play, Camera, Film, ExternalLink } from 'lucide-react';
 
 const Portfolio = () => {
@@ -72,7 +72,7 @@ const Portfolio = () => {
     : portfolioItems.filter(item => item.type === activeTab);
 
   return (
-    <section id="portfolio" className="py-20 bg-gray-800">
+    <section id="portfolio" className="py-20 bg-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">

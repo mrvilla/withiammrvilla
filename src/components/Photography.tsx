@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Camera, ZoomIn, Award, MapPin } from 'lucide-react';
 
 const Photography = () => {
@@ -79,7 +79,7 @@ const Photography = () => {
   const allPhotos = photoCategories.flatMap(category => category.photos);
 
   return (
-    <section id="photography" className="py-20 bg-gray-900">
+    <section id="photography" className="py-20 bg-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
@@ -160,7 +160,7 @@ const Photography = () => {
         ))}
 
         {/* Photography Stats */}
-        <div className="bg-gradient-to-r from-gray-800 to-gray-700 rounded-2xl p-8 border border-gray-600">
+        <div className="bg-black rounded-2xl p-8 border border-gray-600">
           <div className="grid md:grid-cols-4 gap-8 text-center">
             <div>
               <div className="text-3xl font-bold text-[#a47764] mb-2">2000+</div>
