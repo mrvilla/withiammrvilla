@@ -12,8 +12,8 @@ function App() {
     <div className="min-h-screen bg-black">
       <Header />
       <Hero />
-      <Portfolio />
-      <Photography />
+      {/* <Portfolio />
+      <Photography /> */}
       <About />
       <Services />
       <Contact />

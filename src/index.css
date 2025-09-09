@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Gradient button reusable styles */
+.gradient-button-bg {
+  background: linear-gradient(90deg, #06B391, #08908D, #0A7389, #114C79, #112179);
+}

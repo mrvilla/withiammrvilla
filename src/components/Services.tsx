@@ -1,4 +1,5 @@
 import { Home, Film, MapPin, Building, Camera, Zap } from 'lucide-react';
+import GradientButton from './GradientButton';
 
 const Services = () => {
   const services = [
@@ -73,21 +74,21 @@ const Services = () => {
                 key={index}
                 className={`relative bg-black rounded-2xl p-8 border ${
                   service.popular 
-                    ? 'border-[#a47764] shadow-lg shadow-[#a47764]/20' 
+                    ? 'border-[#06B391] shadow-lg shadow-[#06B391]/20' 
                     : 'border-gray-700'
-                } transition-all hover:border-[#a47764] hover:shadow-lg hover:shadow-[#a47764]/10 group`}
+                } transition-all hover:border-[#06B391] hover:shadow-lg hover:shadow-[#06B391]/10 group`}
               >
                 {service.popular && (
                   <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
-                    <span className="bg-[#a47764] text-white px-4 py-1 rounded-full text-sm font-semibold">
+                    <span className="bg-[#0A7389] text-white px-4 py-1 rounded-full text-sm font-semibold">
                       Most Popular
                     </span>
                   </div>
                 )}
 
                 <div className="text-center mb-6">
-                  <div className="bg-[#a47764]/20 p-3 rounded-xl inline-flex mb-4 group-hover:bg-[#a47764]/30 transition-colors">
-                    <IconComponent className="h-8 w-8 text-[#a47764]" />
+                  <div className="bg-[#06B391]/20 p-3 rounded-xl inline-flex mb-4 group-hover:bg-[#06B391]/30 transition-colors">
+                    <IconComponent className="h-8 w-8 text-[#06B391]" />
                   </div>
                   <h3 className="text-2xl font-bold text-white mb-2">{service.title}</h3>
                   <p className="text-gray-400">{service.description}</p>
@@ -96,7 +97,7 @@ const Services = () => {
                 <ul className="space-y-3 mb-8">
                   {service.features.map((feature, featureIndex) => (
                     <li key={featureIndex} className="flex items-center space-x-2 text-gray-300">
-                      <div className="w-1.5 h-1.5 bg-[#a47764] rounded-full"></div>
+                      <div className="w-1.5 h-1.5 bg-[#06B391] rounded-full"></div>
                       <span className="text-sm">{feature}</span>
                     </li>
                   ))}
@@ -110,9 +111,9 @@ const Services = () => {
                         <span className="text-gray-400 text-sm ml-1">per project</span>
                       )}
                     </div> */}
-                    <button className="bg-[#a47764] hover:bg-[#8d6854] text-white px-4 py-2 rounded-lg transition-colors font-semibold">
+                    <GradientButton className=" text-white px-4 py-2 rounded-lg transition-colors font-semibold">
                       Get Quote
-                    </button>
+                    </GradientButton>
                   </div>
                 </div>
               </div>
@@ -127,9 +128,9 @@ const Services = () => {
               Every project is unique. We work closely with clients to create tailored aerial solutions 
               that meet your specific requirements, timeline, and budget.
             </p>
-            <button className="bg-[#c49882] hover:bg-[#a47764] text-white px-8 py-3 rounded-lg transition-colors font-semibold">
+            <GradientButton className="text-white px-8 py-3 rounded-lg transition-colors font-semibold">
               Discuss Your Project
-            </button>
+            </GradientButton>
           </div>
         </div>
       </div>

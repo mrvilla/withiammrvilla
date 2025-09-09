@@ -1,4 +1,4 @@
-import { Mail, MapPin, Instagram, Youtube } from 'lucide-react';
+import { Mail, MapPin, Instagram } from 'lucide-react';
 import FlyWithIamIcon from './FlyWithIamIconGradient';
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -22,12 +22,12 @@ const Footer = () => {
               Professional drone videography and aerial cinematography services for all your creative needs.
             </p>
             <div className="flex space-x-4">
-              <a title='Instagram' href="https://www.instagram.com/fly_iammrvilla/reels/" className="text-gray-400 hover:text-[#a47764] transition-colors">
+              <a title='Instagram' href="https://www.instagram.com/fly_iammrvilla/reels/" className="text-gray-400 hover:text-[#06B391] transition-colors">
                 <Instagram className="h-5 w-5" />
               </a>
-              <a title='Youtube' href="https://www.youtube.com/@flyiammrvilla" className="text-gray-400 hover:text-[#a47764] transition-colors">
+              {/* <a title='Youtube' href="https://www.youtube.com/@flyiammrvilla" className="text-gray-400 hover:text-[#06B391] transition-colors">
                 <Youtube className="h-5 w-5" />
-              </a>
+              </a> */}
             </div>
           </div>
 
@@ -38,31 +38,31 @@ const Footer = () => {
               <li>
                 <button
                   onClick={() => scrollToSection('home')}
-                  className="text-gray-400 hover:text-[#a47764] transition-colors text-left"
+                  className="text-gray-400 hover:text-[#06B391] transition-colors text-left"
                 >
                   Home
                 </button>
               </li>
-              <li>
+              {/* <li>
                 <button
                   onClick={() => scrollToSection('portfolio')}
-                  className="text-gray-400 hover:text-[#a47764] transition-colors text-left"
+                  className="text-gray-400 hover:text-[#06B391] transition-colors text-left"
                 >
                   Portfolio
                 </button>
-              </li>
-              <li>
+              </li> */}
+              {/* <li>
                 <button
                   onClick={() => scrollToSection('photography')}
-                  className="text-gray-400 hover:text-[#a47764] transition-colors text-left"
+                  className="text-gray-400 hover:text-[#06B391] transition-colors text-left"
                 >
                   Photography
                 </button>
-              </li>
+              </li> */}
               <li>
                 <button
                   onClick={() => scrollToSection('about')}
-                  className="text-gray-400 hover:text-[#a47764] transition-colors text-left"
+                  className="text-gray-400 hover:text-[#06B391] transition-colors text-left"
                 >
                   About
                 </button>
@@ -70,7 +70,7 @@ const Footer = () => {
               <li>
                 <button
                   onClick={() => scrollToSection('services')}
-                  className="text-gray-400 hover:text-[#a47764] transition-colors text-left"
+                  className="text-gray-400 hover:text-[#06B391] transition-colors text-left"
                 >
                   Services
                 </button>

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Camera, ZoomIn, Award, MapPin } from 'lucide-react';
+import { Camera, ZoomIn, MapPin } from 'lucide-react';
 
 const Photography = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -75,9 +75,7 @@ const Photography = () => {
       ]
     }
   ];
-
-  const allPhotos = photoCategories.flatMap(category => category.photos);
-
+  
   return (
     <section id="photography" className="py-20 bg-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

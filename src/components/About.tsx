@@ -1,39 +1,39 @@
-import { Award, Shield, CheckCircle, Calendar } from 'lucide-react';
+import { Award, CheckCircle, Calendar } from 'lucide-react';
 
 const About = () => {
   const certifications = [
     {
-      title: "European A2 Remote Pilot Certificate",
-      issuer: "Federal Aviation Administration",
+      title: "EASA A1/A3, A2 Remote Pilot Certificate",
+      issuer: "Luftfahrt-Bundesamt",
       date: "2023",
       verified: true
     },
     {
       title: "Commercial Drone Insurance",
-      issuer: "Aviation Insurance Coverage",
+      issuer: "Allianz",
       date: "Current",
       verified: true
     },
-    {
-      title: "Advanced Cinematography Certification",
-      issuer: "Drone Film Academy",
-      date: "2023",
-      verified: true
-    },
-    {
-      title: "Safety Management Systems",
-      issuer: "Professional Drone Pilots Association",
-      date: "2024",
-      verified: true
-    }
+    // {
+    //   title: "Advanced Cinematography Certification",
+    //   issuer: "Drone Film Academy",
+    //   date: "2023",
+    //   verified: true
+    // },
+    // {
+    //   title: "Safety Management Systems",
+    //   issuer: "Professional Drone Pilots Association",
+    //   date: "2024",
+    //   verified: true
+    // }
   ];
 
-  const stats = [
-    { number: "500+", label: "Projects Completed" },
-    { number: "4", label: "Years Experience" },
-    { number: "50+", label: "Happy Clients" },
-    { number: "15", label: "States Covered" }
-  ];
+  // const stats = [
+  //   { number: "10+", label: "Projects Completed" },
+  //   { number: "3", label: "Years Experience" },
+  //   { number: "5+", label: "Happy Clients" },
+  //   { number: "6", label: "States Covered" }
+  // ];
 
   return (
     <section id="about" className="py-20 bg-black">
@@ -43,22 +43,22 @@ const About = () => {
             Licensed & Certified
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Professional drone pilot with all necessary certifications and insurance 
-            to operate safely and legally for commercial projects.
+            With all necessary certifications and insurance 
+            to operate safely and legally for commercial & private projects.
           </p>
         </div>
 
         {/* Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
+        {/* <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
           {stats.map((stat, index) => (
             <div key={index} className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-[#a47764] mb-2">
+              <div className="text-3xl md:text-4xl font-bold text-[#06B391] mb-2">
                 {stat.number}
               </div>
               <div className="text-gray-400 font-medium">{stat.label}</div>
             </div>
           ))}
-        </div>
+        </div> */}
 
         {/* Certifications Grid */}
         <div className="grid md:grid-cols-2 gap-6 mb-12">
@@ -66,8 +66,8 @@ const About = () => {
             <div key={index} className="bg-black rounded-xl p-6 border border-gray-700">
               <div className="flex items-start justify-between mb-4">
                 <div className="flex items-center space-x-3">
-                  <div className="bg-[#a47764]/20 p-2 rounded-lg">
-                    <Award className="h-6 w-6 text-[#a47764]" />
+                  <div className="bg-[#06B391]/20 p-2 rounded-lg">
+                    <Award className="h-6 w-6 text-[#06B391]" />
                   </div>
                   <div>
                     <h3 className="text-white font-semibold text-lg">{cert.title}</h3>

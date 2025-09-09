@@ -1,31 +1,31 @@
-import { useState } from 'react';
-import { Mail, MapPin, Clock, Send, CheckCircle } from 'lucide-react';
+// import { useState } from 'react';
+import { Mail, MapPin, Clock } from 'lucide-react';
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    projectType: '',
-    timeline: '',
-    budget: '',
-    message: ''
-  });
-  const [isSubmitted, setIsSubmitted] = useState(false);
+  // const [formData, setFormData] = useState({
+  //   name: '',
+  //   email: '',
+  //   phone: '',
+  //   projectType: '',
+  //   timeline: '',
+  //   budget: '',
+  //   message: ''
+  // });
+  // const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Handle form submission here
-    setIsSubmitted(true);
-    setTimeout(() => setIsSubmitted(false), 3000);
-  };
+  // const handleSubmit = (e: React.FormEvent) => {
+  //   e.preventDefault();
+  //   // Handle form submission here
+  //   setIsSubmitted(true);
+  //   setTimeout(() => setIsSubmitted(false), 3000);
+  // };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
+  // const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+  //   setFormData({
+  //     ...formData,
+  //     [e.target.name]: e.target.value
+  //   });
+  // };
 
   return (
     <section id="contact" className="py-20 bg-black">
@@ -40,33 +40,33 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12">
+        <div className="grid gap-2 align-items-center">
           {/* Contact Info */}
-          <div className="space-y-8">
+          <div className="">
             <div>
-              <h3 className="text-2xl font-bold text-white mb-6">Get In Touch</h3>
-              <div className="space-y-4">
-                <div className="flex items-center space-x-4">
-                  <div className="bg-[#a47764]/20 p-3 rounded-lg">
-                    <Mail className="h-6 w-6 text-[#a47764]" />
+              {/* <h3 className="text-2xl font-bold text-white mb-6">Get In Touch</h3> */}
+              <div className="flex justify-center align-items-center space-x-4">
+                <div className="flex items-center align-items-center space-x-4">
+                  <div className="bg-[#06B391]/20 p-3 rounded-lg">
+                    <Mail className="h-6 w-6 text-[#06B391]" />
                   </div>
                   <div>
                     <p className="text-white font-semibold">Email</p>
                     <p className="text-gray-400">fly@iammrvilla.com</p>
                   </div>
                 </div>
-                <div className="flex items-center space-x-4">
-                  <div className="bg-[#a47764]/20 p-3 rounded-lg">
-                    <MapPin className="h-6 w-6 text-[#a47764]" />
+                <div className="flex items-center align-items-center space-x-4">
+                  <div className="bg-[#08908D]/20 p-3 rounded-lg">
+                    <MapPin className="h-6 w-6 text-[#06B391]" />
                   </div>
                   <div>
                     <p className="text-white font-semibold">Coverage Area</p>
                     <p className="text-gray-400">Nationwide (Travel Available)</p>
                   </div>
                 </div>
-                <div className="flex items-center space-x-4">
-                  <div className="bg-[#a47764]/20 p-3 rounded-lg">
-                    <Clock className="h-6 w-6 text-[#a47764]" />
+                <div className="flex items-center align-items-center space-x-4">
+                  <div className="bg-[#08908D]/20 p-3 rounded-lg">
+                    <Clock className="h-6 w-6 text-[#06B391]" />
                   </div>
                   <div>
                     <p className="text-white font-semibold">Response Time</p>
@@ -77,27 +77,27 @@ const Contact = () => {
             </div>
 
             {/* Quick Services */}
-            <div className="bg-black rounded-xl p-6 border border-gray-700">
+            {/* <div className="bg-black rounded-xl p-6 border border-gray-700">
               <h4 className="text-xl font-bold text-white mb-4">Quick Services</h4>
               <div className="grid grid-cols-2 gap-4">
-                <button className="bg-black hover:bg-[#a47764] border border-gray-600 text-white p-3 rounded-lg transition-colors text-sm">
+                <button className="bg-black hover:bg-[#06B391] border border-gray-600 text-white p-3 rounded-lg transition-colors text-sm">
                   Real Estate Package
                 </button>
-                <button className="bg-black hover:bg-[#a47764] border border-gray-600 text-white p-3 rounded-lg transition-colors text-sm">
+                <button className="bg-black hover:bg-[#06B391] border border-gray-600 text-white p-3 rounded-lg transition-colors text-sm">
                   Wedding Coverage
                 </button>
-                <button className="bg-black hover:bg-[#a47764] border border-gray-600 text-white p-3 rounded-lg transition-colors text-sm">
+                <button className="bg-black hover:bg-[#06B391] border border-gray-600 text-white p-3 rounded-lg transition-colors text-sm">
                   Commercial Shoot
                 </button>
-                <button className="bg-black hover:bg-[#a47764] border border-gray-600 text-white p-3 rounded-lg transition-colors text-sm">
+                <button className="bg-black hover:bg-[#06B391] border border-gray-600 text-white p-3 rounded-lg transition-colors text-sm">
                   Emergency Service
                 </button>
               </div>
-            </div>
-          </div>
+            </div>*/}
+          </div> 
 
           {/* Contact Form */}
-          <div className="bg-black rounded-2xl p-8 border border-gray-700">
+          {/* <div className="bg-black rounded-2xl p-8 border border-gray-700">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
@@ -229,7 +229,7 @@ const Contact = () => {
 
               <button
                 type="submit"
-                className="w-full bg-[#a47764] hover:bg-[#8d6854] text-white py-4 px-6 rounded-lg transition-all font-semibold text-lg flex items-center justify-center space-x-2 transform hover:scale-105"
+                className="w-full bg-[#06B391] hover:bg-[#08908D] text-white py-4 px-6 rounded-lg transition-all font-semibold text-lg flex items-center justify-center space-x-2 transform hover:scale-105"
               >
                 {isSubmitted ? (
                   <>
@@ -244,7 +244,7 @@ const Contact = () => {
                 )}
               </button>
             </form>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
